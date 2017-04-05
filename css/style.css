@@ -420,6 +420,8 @@ section.section {
   line-height: normal;
   letter-spacing: 1.8px;
   color: #212121;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 .nav>li>a:hover {
