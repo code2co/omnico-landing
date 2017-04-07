@@ -1161,7 +1161,32 @@ a.socialIcon:hover, .socialHoverClass {
 	color: yellow;
 }
 
+.provider img {
+	width: 100px;
+	height: 100px;
+	margin-top: 40px;
+}
 
+.provider h3 {
+	margin-top: 8px;
+	font-size: 22px;
+}
+
+.function .icon {
+	background-color: #ffc107;
+	width: 150px;
+	height: 150px;
+	line-height: 150px;
+	border-radius: 100%;
+	margin: 0 auto 8px;
+}
+
+.function .icon img {
+	height: 70px;
+}
+.function h3 {
+	font-size: 22px;
+}
 
 /* ========================================
 Media queries
