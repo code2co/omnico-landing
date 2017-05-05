@@ -11,7 +11,7 @@ $(document)
     .removeClass('active');
   }
 
-  $('.fixed.menu .item').on('click', function (e) {
+  $('.fixed.menu .item').not('.toc').on('click', function (e) {
     var el = $(this);
     var target = $(el.attr('href'));
     var position = target.offset().top;
