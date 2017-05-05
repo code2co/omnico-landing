@@ -12,7 +12,17 @@ $(document)
   }
 
   $('.fixed.menu .item').on('click', function (e) {
-    $(this)
+    var el = $(this);
+    var target = $(el.attr('href'));
+    var position = target.offset().top;
+
+    $('html, body')
+      .animate({
+        scrollTop: position
+      }, 500)
+    ;
+
+    el
     .addClass('active')
     .siblings()
     .removeClass('active');

@@ -8,14 +8,6 @@ h1, h2, h3, h4, h5, h6,
   display: none;
 }
 
-.masthead.segment {
-  min-height: 600px;
-  padding: 1em 0em;
-  background-color: #ffc107;
-}
-.ui.vertical.masthead.segment {
-  margin-top: 52px;
-}
 .masthead .logo.item img {
   margin-right: 1em;
 }
@@ -166,35 +158,34 @@ h1, h2, h3, h4, h5, h6,
   margin: auto;
 }
 
-.headers {
-  width: 51%;
+.banner.column {
+  display: flex !important;
+  align-items: flex-end;
 }
 
-.masthead {
+.banner.column img {
+  position: relative;
+  bottom: -14px;
+  width: 100%;
+  height: auto;
+}
+
+.ui.vertical.masthead.segment {
+  border: 0;
+  margin-top: 52px;
+  background-color: #ffc107;
+  background-image: linear-gradient(to bottom, #ffa000, rgba(255, 160, 0, 0)), linear-gradient(#ffc107, #ffc107);
+  background-size: 70px 70px;
+  background-repeat: repeat-x;
+  background-position: bottom;
+  display: flex;
   overflow: hidden;
 }
 
-.masthead::after {
-  content: '';
-  display: block;
-  position: absolute;
-  bottom: 0;
-  z-index: 0;
-  width: 1410px;
-  height: 70px;
-  background-image: linear-gradient(to bottom, #ffa000, rgba(255, 160, 0, 0)), linear-gradient(#ffc107, #ffc107);
-}
-
-.header-image {
-  position: absolute;
-  z-index: 1;
-  width: 47%;
-  top: 56px;
-  right: 20px;
-}
-
-.header-image img {
-  width: 100%;
+.masthead.segment {
+  min-height: 600px;
+  padding: 1em 0em;
+  background-color: #ffc107;
 }
 
 .fixed.menu {
